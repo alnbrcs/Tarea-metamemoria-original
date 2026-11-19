@@ -1,0 +1,728 @@
+// Generado a partir de las imágenes originales (decodificadas con FUENTEFALSA.ttf).
+// RC: 1 = correcta a la izquierda, 2 = correcta a la derecha (igual que en E-Prime).
+// Las letras corresponden a los glifos de la fuente falsa (mayúsculas = minúsculas).
+const ITEMS = {
+ "05A": [
+  {
+   "item": 1,
+   "img": "img/Preguntas_05A/P01_Meta05A_Izq.png",
+   "eprime": "Preguntas_05A\\P01_Meta05A_Izq.TIF",
+   "lado": "Izq",
+   "RC": 1,
+   "izquierda": "QW",
+   "derecha": "YI",
+   "objetivo": "QW",
+   "distractor": "YI"
+  },
+  {
+   "item": 2,
+   "img": "img/Preguntas_05A/P02_Meta05A_Izq.png",
+   "eprime": "Preguntas_05A\\P02_Meta05A_Izq.TIF",
+   "lado": "Izq",
+   "RC": 1,
+   "izquierda": "YU",
+   "derecha": "RQ",
+   "objetivo": "YU",
+   "distractor": "RQ"
+  },
+  {
+   "item": 3,
+   "img": "img/Preguntas_05A/P03_Meta05A_Izq.png",
+   "eprime": "Preguntas_05A\\P03_Meta05A_Izq.TIF",
+   "lado": "Izq",
+   "RC": 1,
+   "izquierda": "WQ",
+   "derecha": "OY",
+   "objetivo": "WQ",
+   "distractor": "OY"
+  },
+  {
+   "item": 4,
+   "img": "img/Preguntas_05A/P04_Meta05A_Izq.png",
+   "eprime": "Preguntas_05A\\P04_Meta05A_Izq.TIF",
+   "lado": "Izq",
+   "RC": 1,
+   "izquierda": "UY",
+   "derecha": "QT",
+   "objetivo": "UY",
+   "distractor": "QT"
+  },
+  {
+   "item": 5,
+   "img": "img/Preguntas_05A/P05_Meta05A_Izq.png",
+   "eprime": "Preguntas_05A\\P05_Meta05A_Izq.TIF",
+   "lado": "Izq",
+   "RC": 1,
+   "izquierda": "WE",
+   "derecha": "UO",
+   "objetivo": "WE",
+   "distractor": "UO"
+  },
+  {
+   "item": 6,
+   "img": "img/Preguntas_05A/P06_Meta05A_Izq.png",
+   "eprime": "Preguntas_05A\\P06_Meta05A_Izq.TIF",
+   "lado": "Izq",
+   "RC": 1,
+   "izquierda": "UI",
+   "derecha": "TW",
+   "objetivo": "UI",
+   "distractor": "TW"
+  },
+  {
+   "item": 7,
+   "img": "img/Preguntas_05A/P07_Meta05A_Izq.png",
+   "eprime": "Preguntas_05A\\P07_Meta05A_Izq.TIF",
+   "lado": "Izq",
+   "RC": 1,
+   "izquierda": "EW",
+   "derecha": "PU",
+   "objetivo": "EW",
+   "distractor": "PU"
+  },
+  {
+   "item": 8,
+   "img": "img/Preguntas_05A/P08_Meta05A_Izq.png",
+   "eprime": "Preguntas_05A\\P08_Meta05A_Izq.TIF",
+   "lado": "Izq",
+   "RC": 1,
+   "izquierda": "IU",
+   "derecha": "WY",
+   "objetivo": "IU",
+   "distractor": "WY"
+  },
+  {
+   "item": 9,
+   "img": "img/Preguntas_05A/P09_Meta05A_Izq.png",
+   "eprime": "Preguntas_05A\\P09_Meta05A_Izq.TIF",
+   "lado": "Izq",
+   "RC": 1,
+   "izquierda": "ER",
+   "derecha": "IP",
+   "objetivo": "ER",
+   "distractor": "IP"
+  },
+  {
+   "item": 10,
+   "img": "img/Preguntas_05A/P10_Meta05A_Izq.png",
+   "eprime": "Preguntas_05A\\P10_Meta05A_Izq.TIF",
+   "lado": "Izq",
+   "RC": 1,
+   "izquierda": "IO",
+   "derecha": "YE",
+   "objetivo": "IO",
+   "distractor": "YE"
+  },
+  {
+   "item": 11,
+   "img": "img/Preguntas_05A/P11_Meta05A_Der.png",
+   "eprime": "Preguntas_05A\\P11_Meta05A_Der.TIF",
+   "lado": "Der",
+   "RC": 2,
+   "izquierda": "IQ",
+   "derecha": "RE",
+   "objetivo": "RE",
+   "distractor": "IQ"
+  },
+  {
+   "item": 12,
+   "img": "img/Preguntas_05A/P12_Meta05A_Der.png",
+   "eprime": "Preguntas_05A\\P12_Meta05A_Der.TIF",
+   "lado": "Der",
+   "RC": 2,
+   "izquierda": "EU",
+   "derecha": "OI",
+   "objetivo": "OI",
+   "distractor": "EU"
+  },
+  {
+   "item": 13,
+   "img": "img/Preguntas_05A/P13_Meta05A_Der.png",
+   "eprime": "Preguntas_05A\\P13_Meta05A_Der.TIF",
+   "lado": "Der",
+   "RC": 2,
+   "izquierda": "PW",
+   "derecha": "RT",
+   "objetivo": "RT",
+   "distractor": "PW"
+  },
+  {
+   "item": 14,
+   "img": "img/Preguntas_05A/P14_Meta05A_Der.png",
+   "eprime": "Preguntas_05A\\P14_Meta05A_Der.TIF",
+   "lado": "Der",
+   "RC": 2,
+   "izquierda": "UR",
+   "derecha": "OP",
+   "objetivo": "OP",
+   "distractor": "UR"
+  },
+  {
+   "item": 15,
+   "img": "img/Preguntas_05A/P15_Meta05A_Der.png",
+   "eprime": "Preguntas_05A\\P15_Meta05A_Der.TIF",
+   "lado": "Der",
+   "RC": 2,
+   "izquierda": "OW",
+   "derecha": "TR",
+   "objetivo": "TR",
+   "distractor": "OW"
+  },
+  {
+   "item": 16,
+   "img": "img/Preguntas_05A/P16_Meta05A_Der.png",
+   "eprime": "Preguntas_05A\\P16_Meta05A_Der.TIF",
+   "lado": "Der",
+   "RC": 2,
+   "izquierda": "RI",
+   "derecha": "PO",
+   "objetivo": "PO",
+   "distractor": "RI"
+  },
+  {
+   "item": 17,
+   "img": "img/Preguntas_05A/P17_Meta05A_Der.png",
+   "eprime": "Preguntas_05A\\P17_Meta05A_Der.TIF",
+   "lado": "Der",
+   "RC": 2,
+   "izquierda": "EO",
+   "derecha": "TY",
+   "objetivo": "TY",
+   "distractor": "EO"
+  },
+  {
+   "item": 18,
+   "img": "img/Preguntas_05A/P18_Meta05A_Der.png",
+   "eprime": "Preguntas_05A\\P18_Meta05A_Der.TIF",
+   "lado": "Der",
+   "RC": 2,
+   "izquierda": "IT",
+   "derecha": "WQ",
+   "objetivo": "WQ",
+   "distractor": "IT"
+  },
+  {
+   "item": 19,
+   "img": "img/Preguntas_05A/P19_Meta05A_Der.png",
+   "eprime": "Preguntas_05A\\P19_Meta05A_Der.TIF",
+   "lado": "Der",
+   "RC": 2,
+   "izquierda": "PE",
+   "derecha": "YT",
+   "objetivo": "YT",
+   "distractor": "PE"
+  },
+  {
+   "item": 20,
+   "img": "img/Preguntas_05A/P20_Meta05A_Der.png",
+   "eprime": "Preguntas_05A\\P20_Meta05A_Der.TIF",
+   "lado": "Der",
+   "RC": 2,
+   "izquierda": "TO",
+   "derecha": "PQ",
+   "objetivo": "PQ",
+   "distractor": "TO"
+  }
+ ],
+ "10A": [
+  {
+   "item": 1,
+   "img": "img/Preguntas_10A/P01_Meta10A_Der.png",
+   "eprime": "Preguntas_10A\\P01_Meta10A_Der.TIF",
+   "lado": "Der",
+   "RC": 2,
+   "izquierda": "AS",
+   "derecha": "YI",
+   "objetivo": "YI",
+   "distractor": "AS"
+  },
+  {
+   "item": 2,
+   "img": "img/Preguntas_10A/P02_Meta10A_Der.png",
+   "eprime": "Preguntas_10A\\P02_Meta10A_Der.TIF",
+   "lado": "Der",
+   "RC": 2,
+   "izquierda": "DA",
+   "derecha": "RQ",
+   "objetivo": "RQ",
+   "distractor": "DA"
+  },
+  {
+   "item": 3,
+   "img": "img/Preguntas_10A/P03_Meta10A_Der.png",
+   "eprime": "Preguntas_10A\\P03_Meta10A_Der.TIF",
+   "lado": "Der",
+   "RC": 2,
+   "izquierda": "LJ",
+   "derecha": "OY",
+   "objetivo": "OY",
+   "distractor": "LJ"
+  },
+  {
+   "item": 4,
+   "img": "img/Preguntas_10A/P04_Meta10A_Der.png",
+   "eprime": "Preguntas_10A\\P04_Meta10A_Der.TIF",
+   "lado": "Der",
+   "RC": 2,
+   "izquierda": "GK",
+   "derecha": "QT",
+   "objetivo": "QT",
+   "distractor": "GK"
+  },
+  {
+   "item": 5,
+   "img": "img/Preguntas_10A/P05_Meta10A_Der.png",
+   "eprime": "Preguntas_10A\\P05_Meta10A_Der.TIF",
+   "lado": "Der",
+   "RC": 2,
+   "izquierda": "DF",
+   "derecha": "UO",
+   "objetivo": "UO",
+   "distractor": "DF"
+  },
+  {
+   "item": 6,
+   "img": "img/Preguntas_10A/P06_Meta10A_Der.png",
+   "eprime": "Preguntas_10A\\P06_Meta10A_Der.TIF",
+   "lado": "Der",
+   "RC": 2,
+   "izquierda": "FS",
+   "derecha": "TW",
+   "objetivo": "TW",
+   "distractor": "FS"
+  },
+  {
+   "item": 7,
+   "img": "img/Preguntas_10A/P07_Meta10A_Der.png",
+   "eprime": "Preguntas_10A\\P07_Meta10A_Der.TIF",
+   "lado": "Der",
+   "RC": 2,
+   "izquierda": "AL",
+   "derecha": "PU",
+   "objetivo": "PU",
+   "distractor": "AL"
+  },
+  {
+   "item": 8,
+   "img": "img/Preguntas_10A/P08_Meta10A_Der.png",
+   "eprime": "Preguntas_10A\\P08_Meta10A_Der.TIF",
+   "lado": "Der",
+   "RC": 2,
+   "izquierda": "HK",
+   "derecha": "WY",
+   "objetivo": "WY",
+   "distractor": "HK"
+  },
+  {
+   "item": 9,
+   "img": "img/Preguntas_10A/P09_Meta10A_Der.png",
+   "eprime": "Preguntas_10A\\P09_Meta10A_Der.TIF",
+   "lado": "Der",
+   "RC": 2,
+   "izquierda": "FG",
+   "derecha": "IP",
+   "objetivo": "IP",
+   "distractor": "FG"
+  },
+  {
+   "item": 10,
+   "img": "img/Preguntas_10A/P10_Meta10A_Der.png",
+   "eprime": "Preguntas_10A\\P10_Meta10A_Der.TIF",
+   "lado": "Der",
+   "RC": 2,
+   "izquierda": "GD",
+   "derecha": "YE",
+   "objetivo": "YE",
+   "distractor": "GD"
+  },
+  {
+   "item": 11,
+   "img": "img/Preguntas_10A/P11_Meta10A_Izq.png",
+   "eprime": "Preguntas_10A\\P11_Meta10A_Izq.TIF",
+   "lado": "Izq",
+   "RC": 1,
+   "izquierda": "IQ",
+   "derecha": "SK",
+   "objetivo": "IQ",
+   "distractor": "SK"
+  },
+  {
+   "item": 12,
+   "img": "img/Preguntas_10A/P12_Meta10A_Izq.png",
+   "eprime": "Preguntas_10A\\P12_Meta10A_Izq.TIF",
+   "lado": "Izq",
+   "RC": 1,
+   "izquierda": "EU",
+   "derecha": "JS",
+   "objetivo": "EU",
+   "distractor": "JS"
+  },
+  {
+   "item": 13,
+   "img": "img/Preguntas_10A/P13_Meta10A_Izq.png",
+   "eprime": "Preguntas_10A\\P13_Meta10A_Izq.TIF",
+   "lado": "Izq",
+   "RC": 1,
+   "izquierda": "PW",
+   "derecha": "HJ",
+   "objetivo": "PW",
+   "distractor": "HJ"
+  },
+  {
+   "item": 14,
+   "img": "img/Preguntas_10A/P14_Meta10A_Izq.png",
+   "eprime": "Preguntas_10A\\P14_Meta10A_Izq.TIF",
+   "lado": "Izq",
+   "RC": 1,
+   "izquierda": "UR",
+   "derecha": "HF",
+   "objetivo": "UR",
+   "distractor": "HF"
+  },
+  {
+   "item": 15,
+   "img": "img/Preguntas_10A/P15_Meta10A_Izq.png",
+   "eprime": "Preguntas_10A\\P15_Meta10A_Izq.TIF",
+   "lado": "Izq",
+   "RC": 1,
+   "izquierda": "OW",
+   "derecha": "DJ",
+   "objetivo": "OW",
+   "distractor": "DJ"
+  },
+  {
+   "item": 16,
+   "img": "img/Preguntas_10A/P16_Meta10A_Izq.png",
+   "eprime": "Preguntas_10A\\P16_Meta10A_Izq.TIF",
+   "lado": "Izq",
+   "RC": 1,
+   "izquierda": "RI",
+   "derecha": "KD",
+   "objetivo": "RI",
+   "distractor": "KD"
+  },
+  {
+   "item": 17,
+   "img": "img/Preguntas_10A/P17_Meta10A_Izq.png",
+   "eprime": "Preguntas_10A\\P17_Meta10A_Izq.TIF",
+   "lado": "Izq",
+   "RC": 1,
+   "izquierda": "EO",
+   "derecha": "KL",
+   "objetivo": "EO",
+   "distractor": "KL"
+  },
+  {
+   "item": 18,
+   "img": "img/Preguntas_10A/P18_Meta10A_Izq.png",
+   "eprime": "Preguntas_10A\\P18_Meta10A_Izq.TIF",
+   "lado": "Izq",
+   "RC": 1,
+   "izquierda": "IT",
+   "derecha": "JG",
+   "objetivo": "IT",
+   "distractor": "JG"
+  },
+  {
+   "item": 19,
+   "img": "img/Preguntas_10A/P19_Meta10A_Izq.png",
+   "eprime": "Preguntas_10A\\P19_Meta10A_Izq.TIF",
+   "lado": "Izq",
+   "RC": 1,
+   "izquierda": "PE",
+   "derecha": "FH",
+   "objetivo": "PE",
+   "distractor": "FH"
+  },
+  {
+   "item": 20,
+   "img": "img/Preguntas_10A/P20_Meta10A_Izq.png",
+   "eprime": "Preguntas_10A\\P20_Meta10A_Izq.TIF",
+   "lado": "Izq",
+   "RC": 1,
+   "izquierda": "TO",
+   "derecha": "LF",
+   "objetivo": "TO",
+   "distractor": "LF"
+  }
+ ],
+ "10B": [
+  {
+   "item": 1,
+   "img": "img/Preguntas_10B/P01_Meta10B_Izq.png",
+   "eprime": "Preguntas_10B\\P01_Meta10B_Izq.TIF",
+   "lado": "Izq",
+   "RC": 1,
+   "izquierda": "AS",
+   "derecha": "ZX",
+   "objetivo": "AS",
+   "distractor": "ZX"
+  },
+  {
+   "item": 2,
+   "img": "img/Preguntas_10B/P02_Meta10B_Izq.png",
+   "eprime": "Preguntas_10B\\P02_Meta10B_Izq.TIF",
+   "lado": "Izq",
+   "RC": 1,
+   "izquierda": "DA",
+   "derecha": "CZ",
+   "objetivo": "DA",
+   "distractor": "CZ"
+  },
+  {
+   "item": 3,
+   "img": "img/Preguntas_10B/P03_Meta10B_Izq.png",
+   "eprime": "Preguntas_10B\\P03_Meta10B_Izq.TIF",
+   "lado": "Izq",
+   "RC": 1,
+   "izquierda": "LJ",
+   "derecha": "ZV",
+   "objetivo": "LJ",
+   "distractor": "ZV"
+  },
+  {
+   "item": 4,
+   "img": "img/Preguntas_10B/P04_Meta10B_Izq.png",
+   "eprime": "Preguntas_10B\\P04_Meta10B_Izq.TIF",
+   "lado": "Izq",
+   "RC": 1,
+   "izquierda": "GK",
+   "derecha": "MN",
+   "objetivo": "GK",
+   "distractor": "MN"
+  },
+  {
+   "item": 5,
+   "img": "img/Preguntas_10B/P05_Meta10B_Izq.png",
+   "eprime": "Preguntas_10B\\P05_Meta10B_Izq.TIF",
+   "lado": "Izq",
+   "RC": 1,
+   "izquierda": "DF",
+   "derecha": "CV",
+   "objetivo": "DF",
+   "distractor": "CV"
+  },
+  {
+   "item": 6,
+   "img": "img/Preguntas_10B/P06_Meta10B_Izq.png",
+   "eprime": "Preguntas_10B\\P06_Meta10B_Izq.TIF",
+   "lado": "Izq",
+   "RC": 1,
+   "izquierda": "FS",
+   "derecha": "VX",
+   "objetivo": "FS",
+   "distractor": "VX"
+  },
+  {
+   "item": 7,
+   "img": "img/Preguntas_10B/P07_Meta10B_Izq.png",
+   "eprime": "Preguntas_10B\\P07_Meta10B_Izq.TIF",
+   "lado": "Izq",
+   "RC": 1,
+   "izquierda": "AL",
+   "derecha": "XB",
+   "objetivo": "AL",
+   "distractor": "XB"
+  },
+  {
+   "item": 8,
+   "img": "img/Preguntas_10B/P08_Meta10B_Izq.png",
+   "eprime": "Preguntas_10B\\P08_Meta10B_Izq.TIF",
+   "lado": "Izq",
+   "RC": 1,
+   "izquierda": "HK",
+   "derecha": "BV",
+   "objetivo": "HK",
+   "distractor": "BV"
+  },
+  {
+   "item": 9,
+   "img": "img/Preguntas_10B/P09_Meta10B_Izq.png",
+   "eprime": "Preguntas_10B\\P09_Meta10B_Izq.TIF",
+   "lado": "Izq",
+   "RC": 1,
+   "izquierda": "FG",
+   "derecha": "BN",
+   "objetivo": "FG",
+   "distractor": "BN"
+  },
+  {
+   "item": 10,
+   "img": "img/Preguntas_10B/P10_Meta10B_Izq.png",
+   "eprime": "Preguntas_10B\\P10_Meta10B_Izq.TIF",
+   "lado": "Izq",
+   "RC": 1,
+   "izquierda": "GD",
+   "derecha": "BC",
+   "objetivo": "GD",
+   "distractor": "BC"
+  },
+  {
+   "item": 11,
+   "img": "img/Preguntas_10B/P11_Meta10B_Der.png",
+   "eprime": "Preguntas_10B\\P11_Meta10B_Der.TIF",
+   "lado": "Der",
+   "RC": 2,
+   "izquierda": "CN",
+   "derecha": "SK",
+   "objetivo": "SK",
+   "distractor": "CN"
+  },
+  {
+   "item": 12,
+   "img": "img/Preguntas_10B/P12_Meta10B_Der.png",
+   "eprime": "Preguntas_10B\\P12_Meta10B_Der.TIF",
+   "lado": "Der",
+   "RC": 2,
+   "izquierda": "CX",
+   "derecha": "JS",
+   "objetivo": "JS",
+   "distractor": "CX"
+  },
+  {
+   "item": 13,
+   "img": "img/Preguntas_10B/P13_Meta10B_Der.png",
+   "eprime": "Preguntas_10B\\P13_Meta10B_Der.TIF",
+   "lado": "Der",
+   "RC": 2,
+   "izquierda": "NM",
+   "derecha": "HJ",
+   "objetivo": "HJ",
+   "distractor": "NM"
+  },
+  {
+   "item": 14,
+   "img": "img/Preguntas_10B/P14_Meta10B_Der.png",
+   "eprime": "Preguntas_10B\\P14_Meta10B_Der.TIF",
+   "lado": "Der",
+   "RC": 2,
+   "izquierda": "NV",
+   "derecha": "HF",
+   "objetivo": "HF",
+   "distractor": "NV"
+  },
+  {
+   "item": 15,
+   "img": "img/Preguntas_10B/P15_Meta10B_Der.png",
+   "eprime": "Preguntas_10B\\P15_Meta10B_Der.TIF",
+   "lado": "Der",
+   "RC": 2,
+   "izquierda": "VM",
+   "derecha": "DJ",
+   "objetivo": "DJ",
+   "distractor": "VM"
+  },
+  {
+   "item": 16,
+   "img": "img/Preguntas_10B/P16_Meta10B_Der.png",
+   "eprime": "Preguntas_10B\\P16_Meta10B_Der.TIF",
+   "lado": "Der",
+   "RC": 2,
+   "izquierda": "XZ",
+   "derecha": "KD",
+   "objetivo": "KD",
+   "distractor": "XZ"
+  },
+  {
+   "item": 17,
+   "img": "img/Preguntas_10B/P17_Meta10B_Der.png",
+   "eprime": "Preguntas_10B\\P17_Meta10B_Der.TIF",
+   "lado": "Der",
+   "RC": 2,
+   "izquierda": "ZM",
+   "derecha": "KL",
+   "objetivo": "KL",
+   "distractor": "ZM"
+  },
+  {
+   "item": 18,
+   "img": "img/Preguntas_10B/P18_Meta10B_Der.png",
+   "eprime": "Preguntas_10B\\P18_Meta10B_Der.TIF",
+   "lado": "Der",
+   "RC": 2,
+   "izquierda": "MB",
+   "derecha": "JG",
+   "objetivo": "JG",
+   "distractor": "MB"
+  },
+  {
+   "item": 19,
+   "img": "img/Preguntas_10B/P19_Meta10B_Der.png",
+   "eprime": "Preguntas_10B\\P19_Meta10B_Der.TIF",
+   "lado": "Der",
+   "RC": 2,
+   "izquierda": "BZ",
+   "derecha": "FH",
+   "objetivo": "FH",
+   "distractor": "BZ"
+  },
+  {
+   "item": 20,
+   "img": "img/Preguntas_10B/P20_Meta10B_Der.png",
+   "eprime": "Preguntas_10B\\P20_Meta10B_Der.TIF",
+   "lado": "Der",
+   "RC": 2,
+   "izquierda": "XN",
+   "derecha": "LF",
+   "objetivo": "LF",
+   "distractor": "XN"
+  }
+ ],
+ "practica": [
+  {
+   "item": 1,
+   "img": "img/Preguntas_Practica/practica1.png",
+   "eprime": "Preguntas_Práctica\\practica1.tif",
+   "lado": "Der",
+   "RC": 2,
+   "izquierda": "AA",
+   "derecha": "EF",
+   "objetivo": "EF",
+   "distractor": "AA"
+  },
+  {
+   "item": 2,
+   "img": "img/Preguntas_Practica/practica2.png",
+   "eprime": "Preguntas_Práctica\\practica2.tif",
+   "lado": "Der",
+   "RC": 2,
+   "izquierda": "NN",
+   "derecha": "AC",
+   "objetivo": "AC",
+   "distractor": "NN"
+  },
+  {
+   "item": 3,
+   "img": "img/Preguntas_Practica/practica3.png",
+   "eprime": "Preguntas_Práctica\\practica3.tif",
+   "lado": "Izq",
+   "RC": 1,
+   "izquierda": "BN",
+   "derecha": "RT",
+   "objetivo": "BN",
+   "distractor": "RT"
+  },
+  {
+   "item": 4,
+   "img": "img/Preguntas_Practica/practica4.png",
+   "eprime": "Preguntas_Práctica\\practica4.tif",
+   "lado": "Izq",
+   "RC": 1,
+   "izquierda": "BB",
+   "derecha": "CW",
+   "objetivo": "BB",
+   "distractor": "CW"
+  },
+  {
+   "item": 5,
+   "img": "img/Preguntas_Practica/practica5.png",
+   "eprime": "Preguntas_Práctica\\practica5.tif",
+   "lado": "Izq",
+   "RC": 1,
+   "izquierda": "KM",
+   "derecha": "MM",
+   "objetivo": "KM",
+   "distractor": "MM"
+  }
+ ]
+};

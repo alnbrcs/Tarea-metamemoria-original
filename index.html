@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Tarea de metamemoria</title>
+  <link rel="stylesheet" href="lib/jspsych.css">
+  <style>
+    html, body { background: #fff; margin: 0; height: 100%; }
+    /* Images as in E-Prime: stretched to fill the screen (STRETCH = true) */
+    .mm-full { position: fixed; left: 0; top: 0; width: 100vw; height: 100vh; object-fit: fill;
+               user-select: none; -webkit-user-drag: none; }
+    .mm-fit  { position: fixed; left: 0; top: 0; width: 100vw; height: 100vh; object-fit: contain;
+               user-select: none; -webkit-user-drag: none; }
+    .mm-fix  { position: fixed; left: 50%; top: 50%; transform: translate(-50%, -50%);
+               font-family: Arial, Helvetica, sans-serif; font-weight: bold; color: #000; line-height: 1; }
+    body.mm-nocursor, body.mm-nocursor * { cursor: none !important; }
+
+    /* Experimenter screens */
+    .mm-setup { max-width: 520px; margin: 8vh auto; font-family: Arial, Helvetica, sans-serif;
+                display: flex; flex-direction: column; gap: 18px; }
+    .mm-setup h1 { font-size: 22px; }
+    .mm-setup label { display: flex; flex-direction: column; gap: 6px; font-weight: bold; }
+    .mm-setup input, .mm-setup select { font-size: 17px; padding: 6px; font-weight: normal; }
+    .mm-setup button { font-size: 17px; padding: 8px 18px; align-self: flex-start; cursor: pointer; }
+    .mm-note { font-size: 14px; color: #555; }
+    .mm-warn { color: #b00; font-weight: bold; }
+    .mm-msg { font-family: Arial, Helvetica, sans-serif; font-size: 18px; }
+    .mm-summary { font-family: Arial, Helvetica, sans-serif; text-align: left; }
+    .mm-summary table { border-collapse: collapse; margin-top: 10px; }
+    .mm-summary td, .mm-summary th { border: 1px solid #ccc; padding: 4px 10px; text-align: center; }
+  </style>
+  <script src="lib/jspsych.js"></script>
+  <script src="lib/plugin-html-keyboard-response.js"></script>
+  <script src="lib/plugin-fullscreen.js"></script>
+  <script src="lib/plugin-preload.js"></script>
+  <script src="lib/extension-pipe.js"></script>
+  <script src="lib/datapipe-client.js"></script>
+  <script src="plugin-mouse-button-response.js"></script>
+  <script src="config.js"></script>
+  <script src="items.js"></script>
+</head>
+<body>
+  <script src="experiment.js"></script>
+</body>
+</html>
